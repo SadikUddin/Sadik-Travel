@@ -1,0 +1,10 @@
+Home page
+- carousel      (http://sorgalla.com/jcarousel/)
+- modal         (http://zurb.com/playground/reveal-modal-plugin)
+- typeahead     (http://twitter.github.io/typeahead.js/)
+
+
+Others for inspiration:
+http://tutorialzine.com/2013/04/50-amazing-jquery-plugins/
+
+https://www.manhattanprep.com/wp-admin/

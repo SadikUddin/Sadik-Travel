@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
+  	<link rel="stylesheet" href="plugins/reveal/reveal.css">
+	<!-- jQuery library using Google's CDN -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- jQuery Library for "REVEAL" that it out-dated -->
+	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script> -->
+	<!-- jQuery compabtibility migration for functions like .live -->
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+	<script type="text/javascript" src="javascript/jquery.reveal.js"></script>
+	<script type="text/javascript" src="javascript/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="javascript/script.js"></script>
+	<title>Sadik's Travels</title>
+</head>
+<body>
+	<div id="home_body_background">
+		<img src="images/nighttime_nyc.jpg" id="home_body_background_stretch" alt="" />
+	</div>
+	<div id="page">
+		<div id="header">
+			<div id="site_title">
+				<a href="index.html">A <span id="NewYork">New Yorker's</span> Guide to <span id="traveling"> Traveling the World</span></a>
+			</div>
+			<div id="login">
+				<div id="myModal" class="reveal-modal">
+				     <h1>Log In Here</h1>
+				     <div id="user_name">User Name:</div>
+				     <div id="user_password">Password:</div>
+				     <!-- <p>Any content could go in here.</p> -->
+				     <a class="close-reveal-modal">&#215;</a>
+				</div>
+				<!-- <a id="clickyThing" href="#"
+					data-reveal-id="myModal"
+					data-animation="fadeAndPop"
+					data-animationspeed="300"
+					data-closeonbackgroundclick="true"
+					data-dismissmodalclass="close-reveal-modal">
+						Log-In
+				</a> -->
+				<a id="clickyThing" href="#" data-reveal-id="myModal">
+						Log-In
+				</a>
+			</div>
+			<div>
+				<ul id="header_menu">
+				 	<li><a href="index.html">Home</a></li>
+				  	<li><a href="tips.html">Tips for Travelers</a>
+				  		<ul class="header_submenu">
+				  			<li><a href="France.html">France</a>
+				  				<ul class="header_subsubmenu">
+				  					<li><a href="paris.html">Paris</a></li>
+				  					<li><a href="Versailles">Versailles</a></li>
+				  				</ul>
+				  			</li>
+				  			<li><a href="England.html">England</a>
+				  				<ul class="header_subsubmenu">
+				  					<li><a href="London.html">London</a></li>
+				  				</ul>
+				  			</li>
+				  		</ul>
+				  	</li>
+				  	<li><a href="food.html">Food Ideas</a></li>
+				  	<li><a href="expeditions.html">Expeditions</a></li>
+				  	<li><a href="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="primary_content">
+			<div class="jcarousel">
+                <ul>
+                    <li>This is 1!<!-- <img src="http://placehold.it/748X300&text=These+are+scrolling+photos!" width="748" height="300"> --></li>
+                    <li>This is 2!<!-- <img src="http://placehold.it/748X300&text=This+is+a+second+photo!" width="748" height="300"> --></li>
+                    <li>This is 3!<!-- <img src="http://placehold.it/748X300&text=This+is+a+third+photo!" width="748" height="300"> --></li>
+                </ul>
+            </div>
+			<div id="home_slideshow_buttons">
+				<p>BUTTONS FOR SLIDE SHOW </p>
+			</div>
+			<div id="home_welcome">
+				<h1>Welcome - Description</h1>
+				<p>Lorem ipsum <a href="blog1.html">dolor</a> sit amet, consectetur adipiscing elit. In ante justo, placerat eu interdum eget, condimentum at mauris. Nullam consequat sollicitudin nibh, ac posuere est pretium id. Mauris pellentesque dolor ut dui viverra, in faucibus nisl facilisis. Sed pellentesque iaculis velit id varius. Donec condimentum maximus sollicitudin. Cras turpis justo, scelerisque sit amet enim a, bibendum scelerisque risus. Vestibulum efficitur lorem condimentum lectus convallis, a aliquet ligula molestie. Donec augue justo, ultrices nec velit in, tincidunt finibus leo. Mauris fermentum ornare libero, ut auctor arcu egestas aliquam. Nam dictum magna non laoreet elementum. Donec sed velit pellentesque, mattis mauris eu, mollis sem.</p>
+			</div>
+			<div id="home_current_blog">
+				<img src="http://placehold.it/870X346&text=This+is+a+static+map+from+the+current+blog+post." />
+				<!-- <div id="home_current_text"> -->
+				<h2 id="home_current_text_title"> Blog Post Title </h2>
+				<h3 id="home_current_text_author">Author: Sadik Uddin</h3>
+				<h4 id="home_current_text_date">Date Published: 1/17/2015</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante justo, placerat eu interdum eget, condimentum at mauris. Nullam consequat sollicitudin nibh, ac posuere est pretium id. Mauris pellentesque dolor ut dui viverra, in faucibus nisl facilisis. Sed pellentesque iaculis velit id varius. Donec condimentum maximus sollicitudin. Cras turpis justo, scelerisque sit amet enim a, bibendum scelerisque risus. Vestibulum efficitur lorem condimentum lectus convallis, a aliquet ligula molestie. Donec augue justo, ultrices nec velit in, tincidunt finibus leo. Mauris fermentum ornare libero, ut auctor arcu egestas aliquam. Nam dictum magna non laoreet elementum. Donec sed velit pellentesque, mattis mauris eu, mollis sem.</p>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="footer_contact_information">
+				<h3>Sadik Uddin</h3>
+				<h3>Sadik@gmail.com</h3>
+				<h3>555-555-5555</h3>
+			</div>
+			<div id="footer_menu">
+				<ul>
+				 	<li><a href="index.html">Home</a></li>
+				  	<li><a href="tips.html">Tips for Travelers</a></li>
+				  	<li><a href="food.html">Food Ideas</a></li>
+				  	<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+	<!--<script type="text/javascript">
+		var padCounter = 0;
+		setInterval(function(){
+			//document.getElementById("home_slideshow_buttons").innerHTML = "<h1>YOYO</h1>" + padCounter;
+			//document.getElementById("home_slideshow_buttons").style.paddingTop = padCounter + "px";
+
+			padCounter++;
+		}, 10);
+	</script>-->
+</html>

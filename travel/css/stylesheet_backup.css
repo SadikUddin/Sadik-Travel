@@ -1,0 +1,249 @@
+/* SEPARATE SECTION - GLOBAL or BACKGROUND HTML*/
+body 
+{
+	font-family: "Arial", "Helvetica", "Helvetica Neue";
+	font-size: 14px;
+	color: #333;
+	text-align: left;
+	background-image: url("images/indexbackground2.jpg");
+	margin: 30px 0 0 0;
+}
+
+body a
+{
+	text-decoration: none;
+}
+
+div#page
+{
+	/*border: 2px dashed red;*/
+	margin: 10px auto 10px auto;
+	width: 946px;
+}
+
+
+/*SEPARATE SECTION - HEADER*/
+
+div#header
+{
+	/*border: 2px solid red;*/
+	margin: 10px auto 0 auto;
+	padding: 10px 0 0 0;
+	position: relative;
+	width: 946px;
+}
+
+div#site_title
+{
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 35px;
+	/*line-height: 15px;*/
+	margin: 0 0 0 15px;
+	display: inline-block;
+	padding: 0 0 5px 0;
+	float: left;
+	width: 60%;
+}
+
+#site_title a
+{
+	color: white;
+}
+
+span#NewYork 
+{
+	color:#620404;
+}
+
+span#traveling
+{
+	color:#620404;
+}
+
+div#login
+{
+	float: right;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin:  15px 20px 0 0;
+	display: inline-block;
+	padding: 0 0 5px 0;
+}
+
+
+div#login a:link, a:visited
+{
+	color:white;
+	text-transform: uppercase;
+	font-weight: bold; 
+	padding: 4px;
+}
+
+div#login a:hover, a:active 
+{
+    color: black;
+}
+
+div#header_menu ul
+{
+	border:2px solid #310c0c;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 0 0 0	;
+	padding: 0 0 0 0;
+	font-size: 18px;
+	text-align: left;
+	width: 100%;
+	background-color: #FFD700;
+	border-radius: 24px;
+	clear: both;
+}
+
+div#header_menu li
+{
+	/*border:2px solid brown;*/
+	margin: 0 10px 0 10px;
+	padding: 5px 5px 5px 5px;
+	float:left;
+}
+
+div#header_menu a:link, a:visited
+{
+	color:#310c0c;
+	text-transform: uppercase;
+	font-weight: bold; 
+	padding: 4px;
+}
+
+div#header_menu a:hover, a:active 
+{
+    color: #ffd700;
+    background-color:#310c0c;
+}
+
+/*SEPARATE SECTION - index.html BODY CONTENT*/
+
+div#primary_content
+{
+	border: 2px solid #421010;
+	/* ROUNDED CORNERS */
+	border-radius: 24px;
+	/* DROP SHADOW */
+	box-shadow: 0px 0px 14px #421010;
+	/* BACKGROUND */
+	background-color: white;
+	padding: 40px;	
+}
+
+div#home_slideshow
+{
+	padding-bottom: 0;
+	/*border: 2px dashed blue;*/
+	width: 870px;
+}
+
+div#home_slideshow_buttons
+{
+	text-align: center;
+}
+
+div#home_welcome h1
+{
+	font-size: 40px;
+	line-height: 14px;
+	color: black;
+}
+
+div#home_current_blog
+{
+	padding-bottom: 0;
+	/*border: 2px dashed blue;*/
+	width: 870px;
+}
+
+#home_current_text_title
+{
+	/*border: 2px solid green;*/
+	padding: 5px 0 0 5px;
+	margin: 0 0 0 0;
+}
+
+#home_current_text_author
+{
+	/*border: 2px solid green;*/
+	padding: 5px 0 0 5px;
+	margin: 0 0 0 0;
+}
+
+#home_current_text_date
+{
+	/*border: 2px solid red;*/
+	padding: 5px 0 0 5px;
+	margin: 0 0 0 0;
+}
+
+/*SEPARATE SECTION - FOOTER*/
+
+div#footer
+{
+	/*border: 2px solid red;*/
+	margin: 0 auto 0 auto;
+	padding: 0 0 0 0;
+	background-color: #FFD700;	
+	width: 946px;
+	border-radius: 24px;
+	position: absolute;
+}
+
+div#footer_contact_information
+{
+/*	border:2px solid red;*/
+	float:left;
+	width: 49%;
+	float: left;
+	height: auto;
+	text-align: left;
+	margin: 20px 0 0 0;
+}
+
+div#footer_contact_information h3
+{
+	padding: 2px 2px 2px 10px;
+	margin: 0 0 0 15px;
+}
+
+div#footer_menu ul
+{
+	/*border:2px solid #310c0c;*/
+	list-style-type: none;
+	margin: 5px 0 5px 0	;
+	padding: 0 10px 0 0;
+	font-size: 15px;
+	text-align: right;
+	width: 20%;
+	float: right;
+	height: auto;
+}
+
+div#footer_menu li
+{
+	/*border:2px solid brown;*/
+	margin: 0 0 0 0;
+	padding: 2px 2px 2px 2px;
+}
+
+div#footer_menu a:link, a:visited
+{
+	color:#310c0c;
+	text-transform: uppercase;
+	font-weight: bold; 
+	padding: 4px;
+}
+
+div#footer_menu a:hover, a:active 
+{
+    color: #ffd700;
+    background-color:#310c0c;
+}

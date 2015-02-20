@@ -1,0 +1,476 @@
+/* SEPARATE SECTION - GLOBAL or BACKGROUND HTML*/
+body
+{
+	font-family: "Arial", "Helvetica", "Helvetica Neue";
+	font-size: 14px;
+	color: #333;
+	text-align: left;
+	/*background-image: url("images/old_nyc_photo.jpg");*/
+	/*background-repeat: repeat-x;*/
+	background-color: #E3CAA1;
+	margin: 30px 0 0 0;
+}
+
+body a
+{
+	text-decoration: none;
+}
+
+div#page
+{
+	/*border: 2px dashed red;*/
+	margin: 10px auto 10px auto;
+	width: 946px;
+}
+
+
+/*SEPARATE SECTION - HEADER*/
+
+div#header
+{
+	/*border: 2px solid red;*/
+	margin: 10px auto 0 auto;
+	padding: 10px 0 0 0;
+	/*position: relative;*/
+	width: 946px;
+}
+
+div#site_title
+{
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 35px;
+	/*line-height: 15px;*/
+	margin: 0 0 0 15px;
+	/*display: inline-block;*/
+	padding: 0 0 5px 0;
+	float: left;
+	width: 60%;
+}
+
+#site_title a
+{
+	color: white;
+}
+
+#NewYork
+{
+	color:#FFD700;
+}
+
+#traveling
+{
+	color:#310c0c;
+}
+
+div#login
+{
+	float: right;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin:  15px 20px 0 0;
+	/*display: inline-block;*/
+	padding: 0 0 5px 0;
+}
+
+
+div#login a:link, div#login a:visited
+{
+	color:white;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 4px;
+}
+
+div#login a:hover, div#login a:active
+{
+    color: black;
+    background-color: none;
+}
+
+ul#header_menu
+{
+	border:2px solid #310c0c;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0 0 0 0;
+	font-size: 18px;
+	text-align: left;
+	width: 100%;
+	background-color: #FFD700;
+	border-radius: 24px;
+	clear: both;
+}
+
+#header_menu li
+{
+	/*border:2px solid brown;*/
+	border-radius: 24px;
+	margin: 0 0px 0 0px;
+	padding: 5px 10px 5px 10px;
+	float:left;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#header_menu li:hover
+{
+  background-color:#310c0c;
+}
+
+#header_menu li:hover>a
+{
+   color: #ffd700;
+    background-color:#310c0c;
+}
+
+#header_menu a:link, a:visited
+{
+	color:#310c0c;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 4px;
+}
+
+/* HIDE SUBMENUS */
+.header_submenu, .header_subsubmenu
+{
+	display: none;
+	position: absolute;
+	/*background-color: #FFD700;*/
+	padding: 0px;
+	width: 100%;
+	border-radius: 24px;
+}
+
+.header_submenu li, .header_subsubmenu li{
+	background-color: #FFD700;
+}
+
+.header_submenu{
+	top: 32px;
+	left: 0;
+	z-index: 2;
+}
+
+.header_subsubmenu{
+	top: 0;
+	left: 92%;
+	border-radius: 24px;
+	z-index: -1;
+}
+
+#header_menu .header_subsubmenu > li{
+	padding-left: 40px;
+}
+
+#header_menu .header_submenu li:hover {
+	border-radius: 24px 0 0 24px;
+}
+
+/*SHOW SUBMENUS*/
+
+ul#header_menu li:hover>ul
+{
+	display: block;
+	position: absolute;
+	/*background-color: green;*/
+}
+
+ul#header_menu li:hover>ul li
+{
+	/*border: 2px dashed red;*/
+	/*background-color: green;*/
+	display: block;
+	float: center;
+
+}
+
+ul#header_menu li:hover>ul a
+{
+	/*border: 2px dashed green;*/
+	/*background-color: green;*/
+	display: block;
+	/*color:red;*/
+	/*width: auto;*/
+
+}
+
+
+/*SEPARATE SECTION - index.html BODY CONTENT*/
+#home_body_background
+{
+	text-align: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+#home_body_background_stretch
+{
+	margin: auto;
+  height:100%;
+  width: 100%;
+}
+
+div#primary_content
+{
+	border: 2px solid #421010;
+	/* ROUNDED CORNERS */
+	border-radius: 24px;
+	/* DROP SHADOW */
+	box-shadow: 0px 0px 14px #421010;
+	/* BACKGROUND */
+	background-color: white;
+	padding: 40px;
+}
+
+/*jcarousel*/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 750px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    height: 20px;
+    /*border: 2px dashed green;*/
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    /*border: 2px dashed green;*/
+}
+
+div.jcarousel-pagination{
+	margin: 0 auto;
+}
+
+.jcarousel-pagination a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	border: 2px solid #aaa;
+	margin-right: 10px;
+	border-radius: 15px;
+}
+
+.jcarousel-pagination a:hover{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #ccc;
+	border: 2px solid blue;
+	margin-right: 10px;
+	border-radius: 15px;
+}
+
+div#home_slideshow
+{
+	padding-bottom: 0;
+	/*border: 2px dashed blue;*/
+	width: 870px;
+}
+
+div#home_slideshow_buttons
+{
+	text-align: center;
+}
+
+div#home_welcome h1
+{
+	font-size: 40px;
+	line-height: 14px;
+	color: black;
+}
+
+div#home_current_blog
+{
+	padding-bottom: 0;
+	/*border: 2px dashed blue;*/
+	width: 870px;
+}
+
+#home_current_text_title
+{
+	/*border: 2px solid green;*/
+	padding: 5px 0 0 5px;
+	margin: 0 0 0 0;
+}
+
+#home_current_text_author
+{
+	/*border: 2px solid green;*/
+	padding: 5px 0 0 5px;
+	margin: 0 0 0 0;
+}
+
+#home_current_text_date
+{
+	/*border: 2px solid red;*/
+	padding: 5px 0 0 5px;
+	margin: 0 0 0 0;
+}
+
+/*SEPARATE SECTION - FOOTER*/
+
+div#footer
+{
+	/*border: 2px solid red;*/
+	margin: 0 auto 0 auto;
+	padding: 0 0 0 0;
+	background-color: #FFD700;
+	width: 946px;
+	border-radius: 24px;
+	position: absolute;
+}
+
+div#footer_contact_information
+{
+/*	border:2px solid red;*/
+	float:left;
+	width: 49%;
+	float: left;
+	height: auto;
+	text-align: left;
+	margin: 20px 0 0 0;
+}
+
+div#footer_contact_information h3
+{
+	padding: 2px 2px 2px 10px;
+	margin: 0 0 0 15px;
+}
+
+div#footer_menu ul
+{
+	/*border:2px solid #310c0c;*/
+	list-style-type: none;
+	margin: 5px 0 5px 0	;
+	padding: 0 10px 0 0;
+	font-size: 15px;
+	text-align: right;
+	width: 20%;
+	float: right;
+	height: auto;
+}
+
+div#footer_menu li
+{
+	/*border:2px solid brown;*/
+	margin: 0 0 0 0;
+	padding: 2px 2px 2px 2px;
+}
+
+div#footer_menu a:link, div#footer_menu a:visited
+{
+	color:#310c0c;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 4px;
+}
+
+div#footer_menu a:hover, div#footer_menu a:active
+{
+    color: #ffd700;
+    background-color:#310c0c;
+}
+
+/*SEPARATE SECTION - blog1.html BODY CONTENT*/
+
+div#blog_slideshow
+{
+	/*border: 2px dashed blue;*/
+	width: 50%;
+	float: left;
+}
+
+div#blog_slideshow_buttons
+{
+	text-align: center;
+}
+
+
+#blog_current_text_title
+{
+	/*border: 2px dashed green;*/
+	padding: 5px 0 0 5px;
+	margin: 0 0 0 0;
+	/*text-align: right;*/
+}
+
+#blog_current_text_author
+{
+	/*border: 2px solid green;*/
+	padding: 5px 0 0 5px;
+	margin: 0 0 0 0;
+	/*text-align: right;*/
+}
+
+#blog_current_text_date
+{
+	/*border: 2px solid red;*/
+	padding: 5px 0 0 5px;
+	margin: 0 0 0 0;
+	/*text-align: right;*/
+}
+
+/*SEPARATE SECTION - contact.html BODY CONTENT*/
+
+#contact_name
+{
+	padding: 10px 0 10px 0;
+	margin: 0;
+	text-align: left;
+}
+
+#contact_email_address
+{
+	padding: 10px 0 10px 0;
+	margin: 0;
+	text-align: left;
+}
+
+#contact_subject
+{
+	padding: 10px 0 10px 0;
+	margin: 0;
+	text-align: left;
+}
+
+#contact_message
+{
+	padding: 10px 0 10px 0;
+	margin: 0;
+	text-align: left;
+}
+
+/*SEPARATE SECTION - registration2.cfm BODY CONTENT*/
+
+.register
+{
+	margin: 0 25%;
+}
+
+h5.register
+{
+	font-style: italic;
+}
